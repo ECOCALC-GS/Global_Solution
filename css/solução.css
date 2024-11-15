@@ -1,0 +1,102 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #110e24;
+}
+/*Menu no topo da página*/
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #332f4d;
+    color: #00cada;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+header img{
+    width: 100px;
+    height: 100px auto;
+}
+header h1 {
+    font-size: 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin: 20px;
+}
+
+header a {
+    color: #00cada;
+    text-decoration: none;
+    font-weight: 800;
+    border: 10px
+}
+
+header a:hover {
+    color: #ffffff;
+}
+/*Banner do evento*/
+.banner{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 48px;
+    color: #00cada;
+    margin: 20px;
+}
+.banner p{
+    font-size: 20px;
+    margin: 25px;
+    color: white;
+}
+/*Cards da página*/
+.intro{
+    border: 10px solid #221f33;
+    background-color: #332f4d;
+    width: 70%;
+    margin: 0 auto;
+}
+.intro h1{
+    text-align: center;
+    font-size: 36px;
+    color: #00cada;
+}   
+.intro p{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-inline: 10%;
+}
+.intro b{
+    color: white;
+}
+.intro nav{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-inline: 8%;
+}
+/*footer*/
+footer{
+    font-size: 15px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #000000;
+    color: white;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

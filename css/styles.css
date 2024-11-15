@@ -1,0 +1,138 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #110e24;
+}
+/*Menu no topo da página*/
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #332f4d;
+    color: #00cada;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+header img{
+    width: 100px;
+    height: 100px auto;
+}
+header h1 {
+    font-size: 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin: 20px;
+}
+
+header a {
+    color: #00cada;
+    text-decoration: none;
+    font-weight: 800;
+    border: 10px
+}
+
+header a:hover {
+    color: #ffffff;
+}
+/*Banner do evento*/
+.banner{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 48px;
+    color: #00cada;
+    margin: 20px;
+}
+.banner p{
+    font-size: 20px;
+    margin: 25px;
+    color: white;
+}
+.banner a{
+    color: #00cada;
+    border: 10px solid #221f33;
+    background-color: #221f33;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.banner a:hover {
+    background-color: #a4a4a4;
+    border: 10px solid #a4a4a4;
+    color: white;
+}
+/*Conteudo da página*/
+.intro{
+    border: 10px solid #221f33;
+    background-color: #332f4d;
+    width: 70%;
+    margin: 0 auto;
+}
+.intro h1{
+    text-align: center;
+    font-size: 36px;
+    color: #00cada;
+}   
+.intro p{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-inline: 20%;
+}
+.intro b{
+    color: white;
+}
+.intro nav{
+    color: #d8d8d8;
+    font-size: 20px;
+    margin-inline: 8%;
+    justify-content: center;
+    width: 75%;
+    margin: 20px auto;
+}
+.intro ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0%;
+}
+
+.intro li {
+    font-size: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 0%;
+    width: 70%;
+    text-decoration: none;
+    padding: 10px;
+}
+.intro img{
+    width: 0px auto;
+    height: 130px ;
+}
+/*footer*/
+footer{
+    font-size: 15px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #000000;
+    color: white;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
