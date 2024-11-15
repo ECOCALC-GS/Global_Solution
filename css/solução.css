@@ -7,6 +7,9 @@ html, body{
 }
 /*Menu no topo da página*/
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     min-height: 100px;
     background-color: #332f4d;
@@ -38,7 +41,8 @@ header a {
     color: #00cada;
     text-decoration: none;
     font-weight: 800;
-    border: 10px
+    border: 10px;
+    transition: 0.5s;
 }
 
 header a:hover {
@@ -46,6 +50,9 @@ header a:hover {
 }
 /*Banner do evento*/
 .banner{
+    padding-top: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 1)), 
+    url(../img/Banner.jpg) no-repeat center center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -55,19 +62,15 @@ header a:hover {
 .banner h1{
     font-size: 48px;
     color: #00cada;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin: 20px;
-}
-.banner p{
-    font-size: 20px;
-    margin: 25px;
-    color: white;
 }
 /*Cards da página*/
 .intro{
     border: 10px solid #221f33;
     background-color: #332f4d;
     width: 70%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .intro h1{
     text-align: center;

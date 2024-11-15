@@ -6,6 +6,9 @@ html, body{
     background-color: #110e24;
 }
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     min-height: 100px;
     background-color: #332f4d;
@@ -38,19 +41,23 @@ header a {
     text-decoration: none;
     font-weight: 800;
     transition: .3s;
-    border: 10px
+    border: 10px;
+    transition: 0.5s;
 }
 
 header a:hover {
     color: #ffffff;
 }
 
+main{
+    padding-top: 100px;
+}
 .mhome nav{ 
-    border: 10px solid #221f33;
     background-color: #221f33;
     justify-content: center;
     width: 75%;
-    margin: 20px auto;
+    margin: 50px auto;
+    padding-bottom: 40px;
 }
 .mhome h1{
     color: #00cada;
@@ -97,11 +104,33 @@ header a:hover {
 .Integrantes img{
     width: 0px auto;
     height: 130px ;
+    border: 5px solid #48436d;
 }
 .Integrantes p{
     display: flex;
     align-items: center;
     margin: 5px;
+}
+
+.Parceiras h1{
+    text-align: center;
+    font-size: 36px;
+    color: #00cada;
+}   
+.Parceiras nav{
+    padding: 50px;
+    background-color: #332f4d;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.Parceiras img{
+    width: 0px auto;
+    height: 120px ;
+}
+.img2 img{
+    width: 0px auto;
+    height: 90px;
 }
 footer {
     font-size: 15px;

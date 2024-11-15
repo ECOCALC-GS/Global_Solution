@@ -3,10 +3,13 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #110e24;
+    background-color: rgb(17, 14, 36);
 }
 /*Menu no topo da página*/
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     min-height: 100px;
     background-color: #332f4d;
@@ -16,10 +19,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-header img{
-    width: 100px;
-    height: 100px auto;
 }
 header h1 {
     font-size: 40px;
@@ -38,7 +37,8 @@ header a {
     color: #00cada;
     text-decoration: none;
     font-weight: 800;
-    border: 10px
+    border: 10px;
+    transition: 0.5s;
 }
 
 header a:hover {
@@ -46,6 +46,9 @@ header a:hover {
 }
 /*Banner do evento*/
 .banner{
+    padding-top: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 1)), 
+    url(../img/Banner.jpg) no-repeat center center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -55,16 +58,19 @@ header a:hover {
 .banner h1{
     font-size: 48px;
     color: #00cada;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin: 20px;
 }
 .banner p{
     font-size: 20px;
     margin: 25px;
     color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .banner a{
     color: #00cada;
-    border: 10px solid #221f33;
+    border: 4px solid #322e4b;
+    padding: 8px;
     background-color: #221f33;
     text-decoration: none;
     font-weight: 800;
@@ -72,15 +78,15 @@ header a:hover {
 }
 .banner a:hover {
     background-color: #a4a4a4;
-    border: 10px solid #a4a4a4;
+    border: 4px solid #a4a4a4;
     color: white;
 }
-/*Conteudo da página*/
+/*Introdução da calculadora*/
 .intro{
     border: 10px solid #221f33;
     background-color: #332f4d;
     width: 70%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .intro h1{
     text-align: center;
@@ -90,12 +96,37 @@ header a:hover {
 .intro p{
     color: #bbbbbb;
     font-size: 20px;
-    margin-inline: 20%;
+    margin-inline: 10%;
 }
 .intro b{
     color: white;
 }
 .intro nav{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-inline: 8%;
+}
+/*Conteudo da página*/
+.Parceiras{
+    border: 10px solid #221f33;
+    background-color: #332f4d;
+    width: 70%;
+    margin: 50px auto;
+}
+.Parceiras h1{
+    text-align: center;
+    font-size: 36px;
+    color: #00cada;
+}   
+.Parceiras p{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-inline: 20%;
+}
+.Parceiras b{
+    color: white;
+}
+.Parceiras nav{
     color: #d8d8d8;
     font-size: 20px;
     margin-inline: 8%;
@@ -103,14 +134,14 @@ header a:hover {
     width: 75%;
     margin: 20px auto;
 }
-.intro ul {
+.Parceiras ul {
     justify-content: center;
     list-style: none;
     display: flex;
     padding: 0%;
 }
 
-.intro li {
+.Parceiras li {
     font-size: auto;
     justify-content: center;
     display: flex;
@@ -119,9 +150,13 @@ header a:hover {
     text-decoration: none;
     padding: 10px;
 }
-.intro img{
+.Parceiras img{
     width: 0px auto;
-    height: 130px ;
+    height: 120px ;
+}
+.img2 img{
+    width: 0px auto;
+    height: 90px ;
 }
 /*footer*/
 footer{

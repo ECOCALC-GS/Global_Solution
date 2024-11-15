@@ -6,6 +6,9 @@ html, body{
     background-color: #110e24;
 }
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     min-height: 100px;
     background-color: #332f4d;
@@ -38,7 +41,8 @@ header a {
     text-decoration: none;
     font-weight: 800;
     transition: .3s;
-    border: 10px
+    border: 10px;
+    transition: 0.5s;
 }
 
 header a:hover {
@@ -53,13 +57,14 @@ header a:hover {
 
 main{
     flex: 1;
+    padding-top: 100px;
 }
 
 .mhome nav{ 
     background-color: #221f33;
     justify-content: center;
     width: 90%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .mhome h1{
@@ -90,7 +95,7 @@ main{
     background-color: #403b61;
     text-decoration: none;
     font-weight: 800;
-    transition: .3s;
+    transition: 0.5s;
 }
 
 .mhome a:hover {
