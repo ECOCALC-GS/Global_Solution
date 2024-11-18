@@ -1,27 +1,25 @@
-html, body{
+body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #110e24;
+    background: linear-gradient(to bottom, #ffffff66, #000000), 
+    url(../img/Banner.jpg) no-repeat center center/cover;
 }
+/*Menu no topo da página*/
 header {
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
     min-height: 100px;
-    background-color: #332f4d;
-    color: #00cada;
+    background-color: #32997f;
+    color: #9afcff;
     margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-header img{
-    width: 100px;
-    height: 100px auto;
 }
 header h1 {
     font-size: 40px;
@@ -37,16 +35,27 @@ header li {
 }
 
 header a {
-    color: #00cada;
+    color: #9afcff;
     text-decoration: none;
     font-weight: 800;
-    transition: .3s;
     border: 10px;
     transition: 0.5s;
 }
-
 header a:hover {
-    color: #ffffff;
+    color: white;
+}
+/*Botão Modo Tema Escuro*/
+#btnMudarTema{
+    background-color: #00000000;
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    border: 10px;
+}
+#btnMudarTema:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .container{
@@ -61,7 +70,6 @@ main{
 }
 
 .mhome nav{ 
-    background-color: #221f33;
     justify-content: center;
     width: 90%;
     margin: 50px auto;
@@ -90,23 +98,25 @@ main{
 }
 
 .mhome a {
-    color: #00cada;
-    border: 10px solid #403b61;
-    background-color: #403b61;
+    color: #32997f;
+    border: 4px solid white;
+    background-color: white;
     text-decoration: none;
+    padding: 6px;
     font-weight: 800;
     transition: 0.5s;
 }
 
 .mhome a:hover {
-    background-color: #a4a4a4;
-    border: 10px solid #a4a4a4;
-    color: #ffffff;
+    background-color: #32997f;
+    border: 4px solid white;
+    padding: 6px;
+    color: white;
 }
 
 .ci{
-    border: 10px solid #221f33;
-    background-color: #332f4d;
+    border: 5px solid white;
+    background-color: #32997f;
 }
 .ci h1{
     color: #ffffff;
@@ -114,7 +124,7 @@ main{
 .ci img{
     width: 0px auto;
     height: 300px ;
-    border: 10px solid #48436d;
+    border: 5px solid white;
 }
 .ci p{
     display: flex;
@@ -132,4 +142,31 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+body.dark-theme{
+    background-color: #110e24;
+}
+body.dark-theme header{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .mhome a {
+    color: #221d49;
+    border: 4px solid #9afcff;
+    background-color: #9afcff;
+}
+body.dark-theme .mhome a:hover {
+    background-color: #221d49;
+    border: 4px solid #9afcff;
+    color: #9afcff;
+}
+body.dark-theme .ci{
+    background-color: #221d49;
+    border: 5px solid #18162b;
+}
+body.dark-theme .ci h1{
+    color: #9afcff;
+}
+body.dark-theme .ci img{
+    border: 5px solid #18162b;
 }

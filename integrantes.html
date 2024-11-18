@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Global Solution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/integrantes.css">
+    <title>Global Solution</title>
 </head>
 
-<body>
+<body class="light-theme">
+    <!--Menu da Página-->
     <header>
         <h1>EcoCalc</h1>
         <nav>
@@ -15,84 +17,86 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="calculadora.html">Calculadora</a></li>
                 <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="mhome">
+        <!--Banner da Página-->
+        <section class="banner">
+            <div>
+                <h1>Integrantes</h1>
+            </div>
+        </section>
+        <section class="intro">
             <nav>
-                <div class="Feedback">
+    <div class="Integrantes">
+        <ul>
+            <li><img src="img/F_Jonas.jpg" alt="Foto do Jonas"></li>
+            <li>
+                <p>Jonas Kimio Isiki</p>
+            </li>
+            <li>
+                <p><a href="jonas.html">Contato</a></p>
+            </li>
+        </ul>
+    </div>
+    <div class="Integrantes">
+        <ul>
+            <li><img src="img/F_Daniel.jpg" alt="Foto do Daniel"></li>
+            <li>
+                <p>Daniel Kendi Saijo Araki</p>
+            </li>
+            <li>
+                <p><a href="daniel.html">Contato</a></p>
+            </li>
+        </ul>
+        </ul>
+    </div>
+    <div class="Integrantes">
+        <ul>
+            <li><img src="img/F_Marcos.jpg" alt="Foto do Marcos"></li>
+            <li>
+                <p>Marcos Vinicius Alves Marques</p>
+            </li>
+            <li>
+                <p><a href="marcos.html">Contato</a></p>
+            </li>
+        </ul>
+        </ul>
+    </div>
+    </nav>
+        </section>
+        <section class="Parceiras">
+            <div>
+                <h1>Empresa Idealizadora</h1>
+                <nav>
                     <ul>
-                        <li>
-                            <h1>Integrantes</h1>
-                        </li>
+                        <li><img src="img/FIAP.png" alt="Logo da FIAP"></li>
                     </ul>
-                </div>
-                <div class="Integrantes">
+                </nav>
+                <h1>Empresas Parceiras</h1>
+                <nav>
                     <ul>
-                        <li><img src="img/F_Jonas.jpg" alt="Foto do Jonas"></li>
-                        <li>
-                            <p>Jonas Kimio Isiki</p>
-                        </li>
-                        <li>
-                            <p><a href="jonas.html">Contato</a></p>
-                        </li>
+                        <li><img src="img/SAP.png" alt="Logo da SAP"></li>
+                        <li><img src="img/FIA.png" alt="Logo da FIA"></li>
+                        <li><img src="img/MAHINDRA.png" alt="Logo da Mahindra"></li>
                     </ul>
-                </div>
-                <div class="Integrantes">
-                    <ul>
-                        <li><img src="img/F_Daniel.jpg" alt="Foto do Daniel"></li>
-                        <li>
-                            <p>Daniel Kendi Saijo Araki</p>
-                        </li>
-                        <li>
-                            <p><a href="daniel.html">Contato</a></p>
-                        </li>
+                    <ul class="img2">
+                        <li><img src="img/Ultragaz.png" alt="Logo da Ultragaz"></li>
+                        <li><img src="img/Ultracargo.png" alt="Logo da Ultracargo"></li>
                     </ul>
-                    </ul>
-                </div>
-                <div class="Integrantes">
-                    <ul>
-                        <li><img src="img/F_Marcos.jpg" alt="Foto do Marcos"></li>
-                        <li>
-                            <p>Marcos Vinicius Alves Marques</p>
-                        </li>
-                        <li>
-                            <p><a href="marcos.html">Contato</a></p>
-                        </li>
-                    </ul>
-                    </ul>
-                </div>
-                <section class="Parceiras">
-                    <div>
-                        <h1>Empresa Idealizadora</h1>
-                        <nav>
-                            <ul>
-                                <li><img src="img/FIAP.png" alt="Logo da FIAP"></li>
-                            </ul>
-                        </nav>
-                        <h1>Empresas Parceiras</h1>
-                        <nav>
-                            <ul>
-                                <li><img src="img/SAP.png" alt="Logo da SAP"></li>
-                                <li><img src="img/FIA.png" alt="Logo da FIA"></li>
-                                <li><img src="img/MAHINDRA.png" alt="Logo da Mahindra"></li>
-                            </ul>
-                            <ul class="img2">
-                                <li><img src="img/Ultragaz.png" alt="Logo da Ultragaz"></li>
-                                <li><img src="img/Ultracargo.png" alt="Logo da Ultracargo"></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </section>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </section>
     </main>
+    <!--Footer-->
     <footer>
         <div>
             <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
         </div>
     </footer>
+    <script src="js/Dm.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
-html, body{
+body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 14, 36);
+    background-color: #32997f;
 }
 /*Menu no topo da página*/
 header {
@@ -12,8 +12,8 @@ header {
     z-index: 1000;
     width: 100%;
     min-height: 100px;
-    background-color: #332f4d;
-    color: #00cada;
+    background-color: #32997f;;
+    color: #9afcff;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -34,20 +34,32 @@ header li {
 }
 
 header a {
-    color: #00cada;
+    color: #9afcff;
     text-decoration: none;
     font-weight: 800;
     border: 10px;
     transition: 0.5s;
 }
-
 header a:hover {
-    color: #ffffff;
+    color: white;
+}
+/*Botão Modo Tema Escuro*/
+#btnMudarTema{
+    background-color: #00000000;
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    border: 10px;
+}
+#btnMudarTema:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
 /*Banner do evento*/
 .banner{
     padding-top: 100px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 1)), 
+    background: linear-gradient(to bottom, #ffffff66, #000000), 
     url(../img/Banner.jpg) no-repeat center center/cover;
     height: 400px;
     display: flex;
@@ -57,7 +69,7 @@ header a:hover {
 }
 .banner h1{
     font-size: 48px;
-    color: #00cada;
+    color: #9afcff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin: 20px;
 }
@@ -68,33 +80,33 @@ header a:hover {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .banner a{
-    color: #00cada;
-    border: 4px solid #322e4b;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    background-color: #00000000;
     padding: 8px;
-    background-color: #221f33;
     text-decoration: none;
     font-weight: 800;
-    transition: 0.5s;
 }
 .banner a:hover {
-    background-color: #a4a4a4;
-    border: 4px solid #a4a4a4;
+    background-color: #acacac80;
+    border: 4px solid #acacac;
     color: white;
+    transition: 0.5s;
 }
 /*Introdução da calculadora*/
 .intro{
-    border: 10px solid #221f33;
-    background-color: #332f4d;
+    border: 10px solid white;
+    background-color: #00000000;
     width: 70%;
     margin: 50px auto;
 }
 .intro h1{
     text-align: center;
     font-size: 36px;
-    color: #00cada;
+    color: white;
 }   
 .intro p{
-    color: #bbbbbb;
+    color: #cccccc;
     font-size: 20px;
     margin-inline: 10%;
 }
@@ -108,26 +120,18 @@ header a:hover {
 }
 /*Conteudo da página*/
 .Parceiras{
-    border: 10px solid #221f33;
-    background-color: #332f4d;
+    border: 10px solid white;
+    background-color: #00000000;
     width: 70%;
     margin: 50px auto;
 }
 .Parceiras h1{
     text-align: center;
     font-size: 36px;
-    color: #00cada;
-}   
-.Parceiras p{
-    color: #bbbbbb;
-    font-size: 20px;
-    margin-inline: 20%;
-}
-.Parceiras b{
     color: white;
-}
+}   
+
 .Parceiras nav{
-    color: #d8d8d8;
     font-size: 20px;
     margin-inline: 8%;
     justify-content: center;
@@ -169,5 +173,40 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/*Modo Tema Escuro*/
+body.dark-theme{
+    background-color: #110e24;
+}
+body.dark-theme header{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .banner a{
+    color: #9afcff;
+    border: 4px solid #9afcff;
+    background-color: #00000000;
+}
+body.dark-theme .banner a:hover{
+    color: white;
+    border: 4px solid #a1a1a1;
+    background-color: #acacac80;
+}
+body.dark-theme .intro{
+    border: 10px solid #221f33;
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .intro h1{
+    color: #9afcff;
+}
+body.dark-theme .intro b{
+    color: #9afcff;
+}
+body.dark-theme .Parceiras h1{
+    color: #9afcff;
+}
+body.dark-theme .Parceiras{
+    border: 10px solid #221f33;
+    background: linear-gradient(to bottom, #292258, #06050c);
 }
 

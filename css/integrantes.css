@@ -1,27 +1,24 @@
-html, body{
+body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #110e24;
+    background-color: #32997f;
 }
+/*Menu no topo da página*/
 header {
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
     min-height: 100px;
-    background-color: #332f4d;
-    color: #00cada;
+    background-color: #32997f;
+    color: #9afcff;
     margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-header img{
-    width: 100px;
-    height: 100px auto;
 }
 header h1 {
     font-size: 40px;
@@ -37,40 +34,83 @@ header li {
 }
 
 header a {
-    color: #00cada;
+    color: #9afcff;
     text-decoration: none;
     font-weight: 800;
-    transition: .3s;
     border: 10px;
     transition: 0.5s;
 }
-
 header a:hover {
-    color: #ffffff;
+    color: white;
 }
-
-main{
+/*Botão Modo Tema Escuro*/
+#btnMudarTema{
+    background-color: #00000000;
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    border: 10px;
+}
+#btnMudarTema:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*Banner do evento*/
+.banner{
     padding-top: 100px;
-}
-.mhome nav{ 
-    background-color: #221f33;
+    background: linear-gradient(to bottom, #ffffff66, #000000), 
+    url(../img/Banner.jpg) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
     justify-content: center;
-    width: 75%;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 48px;
+    color: #9afcff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 20px;
+}
+.banner p{
+    font-size: 20px;
+    margin: 25px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.banner a{
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    background-color: #00000000;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 800;
+}
+.banner a:hover {
+    background-color: #acacac80;
+    border: 4px solid #acacac;
+    color: white;
+    transition: 0.5s;
+}
+/*Introdução da calculadora*/
+.intro{
+    background-color: #00000000;
+    width: 70%;
     margin: 50px auto;
-    padding-bottom: 40px;
 }
-.mhome h1{
-    color: #00cada;
-    font-size: 35px;
-}
-.mhome ul {
+.intro h1{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}   
+.intro ul {
     justify-content: center;
     list-style: none;
     display: flex;
     padding: 0%;
 }
-
-.mhome li {
+.intro li {
     font-size: auto;
     justify-content: center;
     display: flex;
@@ -82,57 +122,81 @@ main{
     padding: 10px;
 }
 
-.mhome li a {
-    color: #00cada;
-    border: 10px solid #403b61;
-    background-color: #403b61;
+.intro li a {
+    color: #32997f;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    padding: 8px;
     text-decoration: none;
     font-weight: 800;
+}
+
+.intro a:hover {
+    background-color: #32997f;
+    border: 4px solid #ffffff;
+    color: white;
     transition: 0.5s;
 }
 
-.mhome a:hover {
-    background-color: #a4a4a4;
-    border: 10px solid #a4a4a4;
-    color: white;
-}
-
 .Integrantes{
-    border: 10px solid #221f33;
-    background-color: #332f4d;
+    border: 5px solid white;
 }
 .Integrantes img{
     width: 0px auto;
     height: 130px ;
-    border: 5px solid #48436d;
+    border: 5px solid white;
 }
 .Integrantes p{
     display: flex;
     align-items: center;
     margin: 5px;
 }
-
+/*Conteudo da página*/
+.Parceiras{
+    border: 10px solid white;
+    background-color: #00000000;
+    width: 70%;
+    margin: 50px auto;
+}
 .Parceiras h1{
     text-align: center;
     font-size: 36px;
-    color: #00cada;
+    color: white;
 }   
+
 .Parceiras nav{
-    padding: 50px;
-    background-color: #332f4d;
     font-size: 20px;
+    margin-inline: 8%;
     justify-content: center;
+    width: 75%;
+    margin: 20px auto;
+}
+.Parceiras ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0%;
 }
 
+.Parceiras li {
+    font-size: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 0%;
+    width: 70%;
+    text-decoration: none;
+    padding: 10px;
+}
 .Parceiras img{
     width: 0px auto;
     height: 120px ;
 }
 .img2 img{
     width: 0px auto;
-    height: 90px;
+    height: 90px ;
 }
-footer {
+/*footer*/
+footer{
     font-size: 15px;
     width: 100%;
     min-height: 100px;
@@ -143,3 +207,56 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 }
+
+/*Modo Tema Escuro*/
+body.dark-theme{
+    background-color: #110e24;
+}
+body.dark-theme header{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .banner a{
+    color: #9afcff;
+    border: 4px solid #9afcff;
+    background-color: #00000000;
+}
+body.dark-theme .banner a:hover{
+    color: white;
+    border: 4px solid #a1a1a1;
+    background-color: #acacac80;
+}
+body.dark-theme .intro h1{
+    color: #9afcff;
+}
+body.dark-theme .intro b{
+    color: #9afcff;
+}
+body.dark-theme .intro li a {
+    color: #221d49;
+    border: 4px solid #9afcff;
+    background-color: #9afcff;
+}
+body.dark-theme .intro a:hover {
+    background-color: #221d49;
+    border: 4px solid #9afcff;
+    color: #9afcff;
+}
+body.dark-theme .Integrantes{
+    background-color: #221d49;
+    border: 5px solid #18162b;
+}
+body.dark-theme .Integrantes p{
+    color: #9afcff;
+}
+body.dark-theme .Integrantes img{
+    border: 5px solid #18162b;
+}
+
+body.dark-theme .Parceiras h1{
+    color: #9afcff;
+}
+body.dark-theme .Parceiras{
+    border: 10px solid #18162b;
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+
