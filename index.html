@@ -14,10 +14,15 @@
         <h1>EcoCalc</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-                <li><a><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></a></li>
+                <div class="mobile">
+                    <li><button id="btnMudarTema" onclick="menu()">Menu</button></li>
+                </div>
+                <div class="pc">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -75,6 +80,21 @@
             <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
         </div>
     </footer>
+    <div class="mobile">
+        <div id="contatomodal" class="modal">
+            <div class="modal-content">
+                <nav>
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calculadora.html">Calculadora</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
     <script src="js/Dm.js"></script>
 </body>
 
