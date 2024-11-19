@@ -9,7 +9,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #c9c8c8;
+    background-color: #49ddb8;
 }
 /*Menu no topo da página*/
 header {
@@ -18,7 +18,7 @@ header {
     z-index: 1;
     width: 100%;
     min-height: 100px;
-    background-color: #32997f;;
+    background-color: #32997f;
     color: #9afcff;
     margin: 0px auto;
     display: flex;
@@ -54,6 +54,17 @@ header a {
 header a:hover {
     color: white;
 }
+header button {
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    border: 10px;
+    transition: 0.5s;
+}
+header button:hover {
+    color: white;
+}
 /*Versão Mobile*/
 @media(min-width:770px){
     .mobile{
@@ -64,6 +75,9 @@ header a:hover {
 @media(max-width:769px){
     .pc{
         display: none;
+    }
+    header button{
+        font-size: 20px;
     }
 }
 /*Botão Modo Tema Escuro*/
@@ -118,6 +132,7 @@ main a {
     color: #32997f;
     border: 4px solid white;
     background-color: white;
+    border-radius: 10px;
     text-decoration: none;
     padding: 6px;
     font-weight: 800;
@@ -168,32 +183,32 @@ body.dark-theme{
 body.dark-theme header{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
-body.dark-theme .mhome a {
+body.dark-theme main a {
     color: #221d49;
     border: 4px solid #9afcff;
     background-color: #9afcff;
 }
-body.dark-theme .mhome a:hover {
+body.dark-theme main a:hover {
     background-color: #221d49;
     border: 4px solid #9afcff;
     color: #9afcff;
 }
 body.dark-theme .ci{
     background-color: #221d49;
-    border: 5px solid #18162b;
+    border: 5px solid #443e66;
 }
 body.dark-theme .ci h1{
     color: #9afcff;
 }
 body.dark-theme .ci img{
-    border: 5px solid #18162b;
+    border: 5px solid #443e66;
 }
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 
-/*Modal*/
-.modal{
+/*Menu*/
+.mn{
     display: none;
     position: fixed;
     z-index: 1; 
@@ -204,7 +219,7 @@ body.dark-theme .modal-content{
     background-color: rgba(0, 0, 0, 0.8);
     overflow-y: auto; 
 }
-.modal-content{
+.menu-content{
     background-color: #38ac8f;
     width: 300px;
     height: 100%; 
@@ -214,21 +229,21 @@ body.dark-theme .modal-content{
     top: 0;
     right: 0; 
 }
-.modal-content nav{ 
+.menu-content nav{ 
     text-align: center;
 }
-.modal-content ul{
+.menu-content ul{
     padding-left: 0px;
 }
-.modal-content li{
+.menu-content li{
     list-style: none;
     padding-top: 60px;
 }
-.modal-content h2{
+.menu-content h2{
     font-size: 40px;
     color: #9afcff;
 }
-.modal-content a{
+.menu-content a{
     color: #9afcff;
     text-decoration: none;
     font-size: 20px;
@@ -236,9 +251,6 @@ body.dark-theme .modal-content{
     border: 10px;
     transition: 0.5s;
 }
-.modal-content button{
+.menu-content button{
     font-size: 20px;
-}
-.modal-content button:hover{
-    color: #9afcff;
 }

@@ -48,16 +48,38 @@ header a {
 header a:hover {
     color: white;
 }
+header button {
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    border: 10px;
+    transition: 0.5s;
+}
+header button:hover {
+    color: white;
+}
 /*Versão Mobile*/
 @media(min-width:770px){
     .mobile{
         display: none;
+    }
+    .pc .banner{
+        height: 400px;
+        width: 100%;
     }
 }
 /*Versão PC*/
 @media(max-width:769px){
     .pc{
         display: none;
+    }
+    .mobile .banner{
+        height: 200px;
+        width: 100%;
+    }
+    header button{
+        font-size: 20px;
     }
 }
 /*Botão Modo Tema Escuro*/
@@ -143,6 +165,7 @@ header a:hover {
     color: #32997f;
     border: 4px solid #ffffff;
     background-color: #ffffff;
+    border-radius: 10px;
     padding: 8px;
     text-decoration: none;
     font-weight: 800;
@@ -260,27 +283,28 @@ body.dark-theme .intro a:hover {
 }
 body.dark-theme .Integrantes{
     background-color: #221d49;
-    border: 5px solid #18162b;
+    border: 5px solid #443e66;
 }
 body.dark-theme .Integrantes p{
     color: #9afcff;
 }
 body.dark-theme .Integrantes img{
-    border: 5px solid #18162b;
+    border: 5px solid #443e66;
 }
 
 body.dark-theme .Parceiras h1{
     color: #9afcff;
 }
 body.dark-theme .Parceiras{
-    border: 10px solid #18162b;
+    border: 10px solid #443e66;
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
-/*Modal*/
-.modal{
+
+/*Menu*/
+.mn{
     display: none;
     position: fixed;
     z-index: 1; 
@@ -291,7 +315,7 @@ body.dark-theme .modal-content{
     background-color: rgba(0, 0, 0, 0.8);
     overflow-y: auto; 
 }
-.modal-content{
+.menu-content{
     background-color: #38ac8f;
     width: 300px;
     height: 100%; 
@@ -301,21 +325,21 @@ body.dark-theme .modal-content{
     top: 0;
     right: 0; 
 }
-.modal-content nav{ 
+.menu-content nav{ 
     text-align: center;
 }
-.modal-content ul{
+.menu-content ul{
     padding-left: 0px;
 }
-.modal-content li{
+.menu-content li{
     list-style: none;
     padding-top: 60px;
 }
-.modal-content h2{
+.menu-content h2{
     font-size: 40px;
     color: #9afcff;
 }
-.modal-content a{
+.menu-content a{
     color: #9afcff;
     text-decoration: none;
     font-size: 20px;
@@ -323,6 +347,6 @@ body.dark-theme .modal-content{
     border: 10px;
     transition: 0.5s;
 }
-.modal-content button{
+.menu-content button{
     font-size: 20px;
 }

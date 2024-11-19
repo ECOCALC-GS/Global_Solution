@@ -1,3 +1,4 @@
+// função de tema claro e escuro do website
 function mudarTema() {
     var body = document.body;
     if (body.classList.contains("light-theme")) {
@@ -9,16 +10,16 @@ function mudarTema() {
         body.classList.add("light-theme")
     }
 }
-
+// menu no modo mobile()
 function menu() {
-    var modal = document.getElementById('contatomodal');
-    modal.style.display = 'block';
+    var mn = document.getElementById('menu');
+    mn.style.display = 'block';
 }
 window.onclick = function (event) {
-    const modal = document.getElementById('contatomodal');
-    const modalContent = document.querySelector('.modal-content');
+    const mn = document.getElementById('menu');
+    const mnContent = document.querySelector('.menu-content');
 
-    if (event.target === modal) { // Se o clique for na área do fundo (modal)
-        modal.style.display = 'none'; // Fecha o modal
+    if (event.target === mn) {
+        mn.style.display = 'none';
     }
 };

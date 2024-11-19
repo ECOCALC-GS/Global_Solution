@@ -48,16 +48,38 @@ header a {
 header a:hover {
     color: white;
 }
+header button {
+    color: #9afcff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    border: 10px;
+    transition: 0.5s;
+}
+header button:hover {
+    color: white;
+}
 /*Versão Mobile*/
 @media(min-width:770px){
     .mobile{
         display: none;
+    }
+    .pc .banner{
+        height: 400px;
+        width: 100%;
     }
 }
 /*Versão PC*/
 @media(max-width:769px){
     .pc{
         display: none;
+    }
+    .mobile .banner{
+        height: 200px;
+        width: 100%;
+    }
+    header button{
+        font-size: 20px;
     }
 }
 /*Botão Modo Tema Escuro*/
@@ -110,7 +132,7 @@ header a:hover {
     color: white;
     transition: 0.5s;
 }
-/*Introdução da calculadora*/
+/*calculadora*/
 .intro{
     border: 10px solid white;
     background-color: #00000000;
@@ -122,19 +144,99 @@ header a:hover {
     font-size: 36px;
     color: #9afcff;
 }   
+.intro h2{
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    color: white;
+}  
 .intro p{
-    color: #cccccc;
+    color: #ffffff;
     font-size: 20px;
     margin-inline: 10%;
+    text-align: center;
 }
 .intro b{
     color: white;
 }
-.intro nav{
-    color: #bbbbbb;
-    font-size: 20px;
-    margin-inline: 8%;
+.intro form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.intro label{
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+}
+.intro input{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dddddd;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.intro form .btn{
+    color: #32997f;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.intro form .btn:hover{
+    background-color: #32997f;
+    border: 4px solid #ffffff;
+    color: white;
+    transition: 0.5s;
+}
+.intro ul {
+    padding: 0;
+}
+.intro li{
+    list-style: none;
+
+}
+/*Páginas de cada pergunta*/
+form div {
+    display: none;
+}
+
+form div.active {
+    display: block;
+}
+/*Resultado*/
+.q7 h3{
+    text-align: center;
+    font-size: 36px;
+    color: #9afcff;
+}   
+.q7 h4{
+    text-align: center;
+    font-size: 36px;
+    color: #9afcff;
+}   
+.q7 p{
+    color: #dddddd;
+    font-size: 20px;
+    margin-inline: 10%;
+    text-align: justify;
+}
+.q7 li{
+    color: #dddddd;
+    font-size: 20px;
+    margin-inline: 10%;
+    text-align: justify;
+    list-style: circle;
+    margin-top: 20px;
+}
+
 /*Parcerias*/
 .Parceiras{
     border: 10px solid white;
@@ -173,11 +275,11 @@ header a:hover {
 }
 .Parceiras img{
     width: 0px auto;
-    height: 60px ;
+    height: 90px ;
 }
 .img2 img{
     width: 0px auto;
-    height: 45px ;
+    height: 60px ;
 }
 /*footer*/
 footer{
@@ -196,21 +298,14 @@ footer{
 body.dark-theme{
     background-color: #110e24;
 }
+body.dark-theme hr{
+    border: 2px solid #443e66;
+}
 body.dark-theme header{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
-body.dark-theme .banner a{
-    color: #9afcff;
-    border: 4px solid #9afcff;
-    background-color: #00000000;
-}
-body.dark-theme .banner a:hover{
-    color: white;
-    border: 4px solid #a1a1a1;
-    background-color: #acacac80;
-}
 body.dark-theme .intro{
-    border: 10px solid #221f33;
+    border: 10px solid #443e66;
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .intro h1{
@@ -223,15 +318,26 @@ body.dark-theme .Parceiras h1{
     color: #9afcff;
 }
 body.dark-theme .Parceiras{
-    border: 10px solid #221f33;
+    border: 10px solid #443e66;
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
+body.dark-theme .intro form .btn{
+    color: #000000;
+    border: 4px solid #9afcff;
+    background-color: #9afcff;
+}
+body.dark-theme .intro form .btn:hover{
+    color: #9afcff;
+    border: 4px solid #9afcff;
+    background-color: #00000000;
+    transition: 0.5s;
+}
 
-/*Modal*/
-.modal{
+/*Menu*/
+.mn{
     display: none;
     position: fixed;
     z-index: 1; 
@@ -242,7 +348,7 @@ body.dark-theme .modal-content{
     background-color: rgba(0, 0, 0, 0.8);
     overflow-y: auto; 
 }
-.modal-content{
+.menu-content{
     background-color: #38ac8f;
     width: 300px;
     height: 100%; 
@@ -252,21 +358,21 @@ body.dark-theme .modal-content{
     top: 0;
     right: 0; 
 }
-.modal-content nav{ 
+.menu-content nav{ 
     text-align: center;
 }
-.modal-content ul{
+.menu-content ul{
     padding-left: 0px;
 }
-.modal-content li{
+.menu-content li{
     list-style: none;
     padding-top: 60px;
 }
-.modal-content h2{
+.menu-content h2{
     font-size: 40px;
     color: #9afcff;
 }
-.modal-content a{
+.menu-content a{
     color: #9afcff;
     text-decoration: none;
     font-size: 20px;
@@ -274,6 +380,6 @@ body.dark-theme .modal-content{
     border: 10px;
     transition: 0.5s;
 }
-.modal-content button{
+.menu-content button{
     font-size: 20px;
 }

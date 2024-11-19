@@ -48,18 +48,32 @@
     header a:hover {
         color: white;
     }
-    /*Versão Mobile*/
-    @media(min-width:770px){
-        .mobile{
-            display: none;
-        }
+    header button {
+        color: #9afcff;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 15px;
+        border: 10px;
+        transition: 0.5s;
     }
-    /*Versão PC*/
-    @media(max-width:769px){
-        .pc{
-            display: none;
-        }
+    header button:hover {
+        color: white;
     }
+/*Versão Mobile*/
+@media(min-width:770px){
+    .mobile{
+        display: none;
+    }
+}
+/*Versão PC*/
+@media(max-width:769px){
+    .pc{
+        display: none;
+    }
+    header button{
+        font-size: 20px;
+    }
+}
     /*Botão Modo Tema Escuro*/
     #btnMudarTema{
         background-color: #00000000;
@@ -97,17 +111,18 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .banner a{
-    color: #ffffff;
+    color: black;
     border: 4px solid #ffffff;
-    background-color: #00000000;
+    background-color: #ffffff;
     padding: 8px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 800;
 }
 .banner a:hover {
-    background-color: #acacac80;
-    border: 4px solid #acacac;
-    color: white;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    background-color: #00000000;
     transition: 0.5s;
 }
 /*Introdução da calculadora*/
@@ -123,7 +138,7 @@
     color: white;
 }   
 .intro p{
-    color: #cccccc;
+    color: #dddddd;
     font-size: 20px;
     margin-inline: 10%;
 }
@@ -200,17 +215,17 @@ body.dark-theme header{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .banner a{
+    color: #000000;
+    border: 4px solid #9afcff;
+    background-color: #9afcff;
+}
+body.dark-theme .banner a:hover{
     color: #9afcff;
     border: 4px solid #9afcff;
     background-color: #00000000;
 }
-body.dark-theme .banner a:hover{
-    color: white;
-    border: 4px solid #a1a1a1;
-    background-color: #acacac80;
-}
 body.dark-theme .intro{
-    border: 10px solid #221f33;
+    border: 10px solid #443e66;
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .intro h1{
@@ -223,15 +238,15 @@ body.dark-theme .Parceiras h1{
     color: #9afcff;
 }
 body.dark-theme .Parceiras{
-    border: 10px solid #221f33;
+    border: 10px solid #443e66;
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 
-/*Modal*/
-.modal{
+/*Menu*/
+.mn{
     display: none;
     position: fixed;
     z-index: 1; 
@@ -242,7 +257,7 @@ body.dark-theme .modal-content{
     background-color: rgba(0, 0, 0, 0.8);
     overflow-y: auto; 
 }
-.modal-content{
+.menu-content{
     background-color: #38ac8f;
     width: 300px;
     height: 100%; 
@@ -252,21 +267,21 @@ body.dark-theme .modal-content{
     top: 0;
     right: 0; 
 }
-.modal-content nav{ 
+.menu-content nav{ 
     text-align: center;
 }
-.modal-content ul{
+.menu-content ul{
     padding-left: 0px;
 }
-.modal-content li{
+.menu-content li{
     list-style: none;
     padding-top: 60px;
 }
-.modal-content h2{
+.menu-content h2{
     font-size: 40px;
     color: #9afcff;
 }
-.modal-content a{
+.menu-content a{
     color: #9afcff;
     text-decoration: none;
     font-size: 20px;
@@ -274,7 +289,7 @@ body.dark-theme .modal-content{
     border: 10px;
     transition: 0.5s;
 }
-.modal-content button{
+.menu-content button{
     font-size: 20px;
 }
 

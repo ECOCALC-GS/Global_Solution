@@ -28,71 +28,104 @@
     </header>
     <main>
         <!--Banner da Página-->
+        <div class="mobile">
         <section class="banner">
             <div>
                 <h1>Cálculo da Pegada de Carbono</h1>
             </div>
         </section>
+        </div>
+        <div class="pc">
+        <section class="banner">
+            <div>
+                <h1>Cálculo da Pegada de Carbono</h1>
+            </div>
+        </section>
+    </div>
         <section class="intro">
             <div>
                 <h1>Cálculo da Pegada de Carbono</h1>
             </div>
-            <div>
-                <p>Quanto você gasta de energia elétrica por mês (em kWh)? </p>
-                <label for="a">kWh:</label>
-                <input type="number" id="a" value="0">
-            </div>
-            <div>
-                <p>Quanto tempo você costuma ficar no banho por dia? </p>
-                <label for="b">Minutos:</label>
-                <input type="number" id="b" value="0">
-            </div>
-            <div>
-                <p>Você utiliza veículo próprio para ir ao trabalho? </p>
-                <label for="c1">Gasolina/Litro:</label>
-                <input type="number" id="c1" value="0">
-            </div>
-            <div>
-                <label for="c2">Diesel/Litro:</label>
-                <input type="number" id="c2" value="0">
-            </div>
-            <div>
-                <label for="c3">Etanol/Litro:</label>
-                <input type="number" id="c3" value="0">
-            </div>
-            <div>
-                <p>Com que frequência você consome alimentos de origem animal (carne, ovos)? </p>
-                <label for="d1">Carne bovina/kg:</label>
-                <input type="number" id="d1" value="0">
-            </div>
-            <div>
-                <label for="d2">Carne de porco/kg:</label>
-                <input type="number" id="d2" value="0">
-            </div>
-            <div>
-                <label for="d3">Carne de frango/kg:</label>
-                <input type="number" id="d3" value="0">
-            </div>
-            <div>
-                <label for="d4">Ovos:</label>
-                <input type="number" id="d4" value="0">
-            </div>
-            <div>
-                <p>Com que frequência você faz compras internacionais por mês SHEIN, AliExpress, Shopee?</p>
-                <label for="e">Quantidade de compras:</label>
-                <input type="number" id="e" value="0">
-            </div>
-            <div>
-                <p>Quantas viagens você fez no ultimo ano (Contando ida de volta)? </p>
-                <label for="f1">Viagens nacionais:</label>
-                <input type="number" id="f1" value="0">
-            </div>
-            <div>
-                <label for="f2">Viagens internacionais:</label>
-                <input type="number" id="f2" value="0">
-            </div>
-            <button onclick="calcular()">Calcular</button>
-            <h2>Resultado: <span id="resultado">0</span></h2>
+            <hr>
+            <form id="carbon-form">
+                <div class="q1 active">
+                    <p>Quanto você gasta de energia elétrica por mês (em kWh)? </p>
+                    <ul>
+                        <li><label for="a">kWh:</label></li>
+                        <li><input type="number" id="a" value="0"></li>
+                        <li><button type="button" id="next-btn-1" onclick="nextPage(1)" class="btn">Próximo</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q2">
+                    <p>Quanto tempo você costuma ficar no banho por dia? </p>
+                    <ul>
+                        <li><label for="b">Minutos:</label></li>
+                        <li><input type="number" id="b" value="0"></li>
+                        <li><button type="button" id="prev-btn-2" onclick="prevPage(2)" class="btn">Voltar</button>
+                        <button type="button" id="next-btn-2" onclick="nextPage(2)" class="btn">Próximo</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q3">
+                    <p>Você utiliza veículo próprio para ir ao trabalho? </p>
+                    <ul>
+                        <li><label for="c1">Gasolina em Litro:</label></li>
+                        <li><input type="number" id="c1" value="0"></li>
+                        <li><label for="c2">Diesel em Litro:</label></li>
+                        <li><input type="number" id="c2" value="0"></li>
+                        <li><label for="c3">Etanol em Litro:</label></li>
+                        <li><input type="number" id="c3" value="0"></li>
+                        <li><button type="button" id="prev-btn-3" onclick="prevPage(3)" class="btn">Voltar</button>
+                        <button type="button" id="next-btn-3" onclick="nextPage(3)" class="btn">Próximo</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q4">
+                    <p>quanto de alimentos de origem animal(carne, ovos) você consome por semana? </p>
+                    <ul>
+                        <li><label for="d1">Carne bovina em kg:</label></li>
+                        <li><input type="number" id="d1" value="0"></li>
+                        <li><label for="d2">Carne de porco em kg:</label></li>
+                        <li><input type="number" id="d2" value="0"></li>
+                        <li><label for="d3">Carne de frango em kg:</label></li>
+                        <li><input type="number" id="d3" value="0"></li>
+                        <li><label for="d4">Quantidade de Ovos:</label></li>
+                        <li><input type="number" id="d4" value="0"></li>
+                        <li><button type="button" id="prev-btn-4" onclick="prevPage(4)" class="btn">Voltar</button>
+                        <button type="button" id="next-btn-4" onclick="nextPage(4)" class="btn">Próximo</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q5">
+                    <p>Com que frequência você faz compras internacionais por mês SHEIN, AliExpress, Shopee?</p>
+                    <ul>
+                        <li><label for="e">Quantidade de compras:</label></li>
+                        <li><input type="number" id="e" value="0"></li>
+                        <li><button type="button" id="prev-btn-5" onclick="prevPage(5)" class="btn">Voltar</button>
+                        <button type="button" id="next-btn-5" onclick="nextPage(5)" class="btn">Próximo</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q6">
+                    <p>Quantas viagens você fez no último ano (Contando ida e volta)? </p>
+                    <ul>
+                        <li><label for="f1">Viagens nacionais:</label></li>
+                        <li><input type="number" id="f1" value="0"></li>
+                        <li><label for="f2">Viagens internacionais:</label></li>
+                        <li><input type="number" id="f2" value="0"></li>
+                        <li><button type="button" id="prev-btn-6" onclick="prevPage(6)" class="btn">Voltar</button>
+                        <button type="button" onclick="calcular()" class="btn">Calcular</button></li>
+                    </ul>
+                </div>
+                
+                <div class="q7">
+                    <h2>Resultado: <span id="resultado">0</span> tCO₂/ano</h2>
+                    <!-- Mensagem aqui será exibida -->
+                    <span id="mensagem">0</span>
+                    <button type="button" id="prev-btn-7" onclick="prevPage(7)" class="btn">Calcular Novamente</button>
+                </div>
+        </form>
         </section>
         <section class="Parceiras">
             <div>
@@ -102,6 +135,7 @@
                         <li><img src="img/FIAP.png" alt="Logo da FIAP"></li>
                     </ul>
                 </nav>
+                <hr>
                 <h1>Empresas Parceiras</h1>
                 <nav>
                     <ul>
@@ -124,8 +158,8 @@
         </div>
     </footer>
     <div class="mobile">
-        <div id="contatomodal" class="modal">
-            <div class="modal-content">
+        <div id="menu" class="mn">
+            <div class="menu-content">
                 <nav>
                     <h2>Menu</h2>
                     <ul>
