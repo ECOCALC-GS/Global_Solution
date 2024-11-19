@@ -20,6 +20,10 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+    header img{
+        width: 50px;
+        height: 50px auto;
+    }
     header h1 {
         font-size: 40px;
     }
@@ -59,19 +63,29 @@
     header button:hover {
         color: white;
     }
-/*Versão Mobile*/
+
+/*Versão PC*/
 @media(min-width:770px){
     .mobile{
         display: none;
     }
 }
-/*Versão PC*/
+/*Versão PC tela pequena*/
+@media(max-width:799px){
+    header img{
+        display: none;
+    }
+}
+/*Versão Mobile*/
 @media(max-width:769px){
     .pc{
         display: none;
     }
     header button{
         font-size: 20px;
+    }
+    header img{
+        display: block;
     }
 }
     /*Botão Modo Tema Escuro*/

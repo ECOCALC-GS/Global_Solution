@@ -59,7 +59,7 @@ header button {
 header button:hover {
     color: white;
 }
-/*Versão Mobile*/
+/*Versão PC*/
 @media(min-width:770px){
     .mobile{
         display: none;
@@ -69,7 +69,13 @@ header button:hover {
         width: 100%;
     }
 }
-/*Versão PC*/
+/*Versão PC tela pequena*/
+@media(max-width:799px){
+    header img{
+        display: none;
+    }
+}
+/*Versão Mobile*/
 @media(max-width:769px){
     .pc{
         display: none;
@@ -80,6 +86,9 @@ header button:hover {
     }
     header button{
         font-size: 20px;
+    }
+    header img{
+        display: block;
     }
 }
 /*Botão Modo Tema Escuro*/
