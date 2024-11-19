@@ -145,7 +145,7 @@ header button:hover {
     color: white;
     transition: 0.5s;
 }
-/*Introdução da calculadora*/
+/*Página de Integrantes*/
 .intro{
     background-color: #00000000;
     width: 70%;
@@ -204,7 +204,7 @@ header button:hover {
     align-items: center;
     margin: 5px;
 }
-/*Conteudo da página*/
+/*Pagina das empresas Parceiras e da idealizadora*/
 .Parceiras{
     border: 10px solid white;
     background-color: #00000000;
@@ -261,7 +261,7 @@ footer{
     justify-content: space-evenly;
 }
 
-/*Modo Tema Escuro*/
+/*Tema Escuro*/
 body.dark-theme{
     background-color: #110e24;
 }
@@ -316,7 +316,7 @@ body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 
-/*Menu*/
+/*Menu na versão mobile*/
 .mn{
     display: none;
     position: fixed;

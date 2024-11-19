@@ -15,9 +15,11 @@
         <h1>EcoCalc</h1>
         <nav>
             <ul>
+                <!--Versão Mobile-->
                 <div class="mobile">
                     <li><button id="btnMudarTema" onclick="menu()">Menu</button></li>
                 </div>
+                <!--Versão PC-->
                 <div class="pc">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="calculadora.html">Calculadora</a></li>
@@ -28,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <!--Banner da Página-->
+        <!--Banner da Página Versão Mobile-->
         <div class="mobile">
         <section class="banner">
             <div>
@@ -36,6 +38,7 @@
             </div>
         </section>
         </div>
+        <!--Banner da Página Versão PC-->
         <div class="pc">
         <section class="banner">
             <div>
@@ -43,12 +46,14 @@
             </div>
         </section>
     </div>
+    <!--Calculadora-->
         <section class="intro">
             <div>
                 <h1>Cálculo da Pegada de Carbono</h1>
             </div>
             <hr>
             <form id="carbon-form">
+                <!--Pergunta 1 (Pagina 1/7)-->
                 <div class="q1 active">
                     <p>Quanto você gasta de energia elétrica por mês (em kWh)? </p>
                     <ul>
@@ -57,7 +62,7 @@
                         <li><button type="button" id="next-btn-1" onclick="nextPage(1)" class="btn">Próximo</button></li>
                     </ul>
                 </div>
-                
+                <!--Pergunta 2 (Pagina 2/7)-->
                 <div class="q2">
                     <p>Quanto tempo você costuma ficar no banho por dia? </p>
                     <ul>
@@ -67,7 +72,7 @@
                         <button type="button" id="next-btn-2" onclick="nextPage(2)" class="btn">Próximo</button></li>
                     </ul>
                 </div>
-                
+                <!--Pergunta 3 (Pagina 3/7)-->
                 <div class="q3">
                     <p>Você utiliza veículo próprio para ir ao trabalho? </p>
                     <ul>
@@ -81,7 +86,7 @@
                         <button type="button" id="next-btn-3" onclick="nextPage(3)" class="btn">Próximo</button></li>
                     </ul>
                 </div>
-                
+                <!--Pergunta 4 (Pagina 4/7)-->
                 <div class="q4">
                     <p>quanto de alimentos de origem animal(carne, ovos) você consome por semana? </p>
                     <ul>
@@ -97,7 +102,7 @@
                         <button type="button" id="next-btn-4" onclick="nextPage(4)" class="btn">Próximo</button></li>
                     </ul>
                 </div>
-                
+                <!--Pergunta 5 (Pagina 5/7)-->
                 <div class="q5">
                     <p>Com que frequência você faz compras internacionais por mês SHEIN, AliExpress, Shopee?</p>
                     <ul>
@@ -107,7 +112,7 @@
                         <button type="button" id="next-btn-5" onclick="nextPage(5)" class="btn">Próximo</button></li>
                     </ul>
                 </div>
-                
+                <!--Pergunta 6 (Pagina 6/7)-->
                 <div class="q6">
                     <p>Quantas viagens você fez no último ano (Contando ida e volta)? </p>
                     <ul>
@@ -119,15 +124,15 @@
                         <button type="button" onclick="calcular()" class="btn">Calcular</button></li>
                     </ul>
                 </div>
-                
+                <!--Resultado (Pagina 7/7)-->
                 <div class="q7">
                     <h2>Resultado: <span id="resultado">0</span> tCO₂/ano</h2>
-                    <!-- Mensagem aqui será exibida -->
                     <span id="mensagem">0</span>
                     <button type="button" id="prev-btn-7" onclick="prevPage(7)" class="btn">Calcular Novamente</button>
                 </div>
         </form>
         </section>
+        <!--Empresas Parcerias e Idealizadora do Global Solution-->
         <section class="Parceiras">
             <div>
                 <h1>Empresa Idealizadora</h1>
@@ -158,6 +163,7 @@
             <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
         </div>
     </footer>
+    <!--Pagina do Menu na versão Mobile-->
     <div class="mobile">
         <div id="menu" class="mn">
             <div class="menu-content">

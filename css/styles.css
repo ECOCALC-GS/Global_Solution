@@ -164,7 +164,7 @@
     font-size: 20px;
     margin-inline: 8%;
 }
-/*Parcerias*/
+/*Pagina das empresas Parceiras e da idealizadora*/
 .Parceiras{
     border: 10px solid white;
     background-color: #00000000;
@@ -221,7 +221,7 @@ footer{
     justify-content: space-evenly;
 }
 
-/*Modo Tema Escuro*/
+/*Tema Escuro*/
 body.dark-theme{
     background-color: #110e24;
 }
@@ -259,7 +259,7 @@ body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 
-/*Menu*/
+/*Menu da versão mobile*/
 .mn{
     display: none;
     position: fixed;
