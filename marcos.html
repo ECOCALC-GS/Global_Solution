@@ -3,63 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Global Solution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/CI.css">
+    <title>Global Solution</title>
 </head>
 
 <body class="light-theme">
+    <!--Menu da Página-->
     <header>
         <h1>EcoCalc</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-                <li><a><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></a></li>
+                <div class="mobile">
+                    <li><button id="btnMudarTema" onclick="menu()">Menu</button></li>
+                </div>
+                <div class="pc">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                </div>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <main>
-            <div class="mhome">
+    <main>
+        <nav>
+            <div class="ci">
+                <ul>
+                    <li>
+                        <h1>Marcos Vinicius Alves Marques</h1>
+                    </li>
+                </ul>
+            </div>
+            <div class="ci">
+                <ul>
+                    <li><img src="img/F_Marcos.jpg" alt="Foto do Marcos"></li>
+                    <li>
+                        <p>Nome: <br>RM: <br>Turma: </p>
+                    </li>
+                    <li>
+                        <p>Marcos Vinicius Alves Marques <br>560475 <br>1TDSZ </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p><a href="https://github.com/M4rkitos" target="_blank">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-marques-9a5284264/"
+                                target="_blank">Linkedin</a></p>
+                        <p><a href="mailto:rm560475@fiap.com.br" target="_blank">E-mail</a></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="integrantes.html">Voltar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div>
+            <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
+        </div>
+    </footer>
+    <div class="mobile">
+        <div id="contatomodal" class="modal">
+            <div class="modal-content">
                 <nav>
-                    <div class="ci">
-                        <ul>
-                            <li>
-                                <h1>Marcos Vinicius Alves Marques</h1>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ci">
-                        <ul>
-                            <li><img src="img/F_Marcos.jpg" alt="Foto do Marcos"></li>
-                            <li>
-                                <p>Nome: <br>RM: <br>Turma: </p>
-                            </li>
-                            <li>
-                                <p>Marcos Vinicius Alves Marques <br>560475 <br>1TDSZ </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p><a href="https://github.com/M4rkitos" target="_blank">GitHub</a></p>
-                                <p><a href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-marques-9a5284264/"
-                                        target="_blank">Linkedin</a></p>
-                                <p><a href="mailto:rm560475@fiap.com.br" target="_blank">E-mail</a></p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li><a href="integrantes.html">Voltar</a></li>
-                        </ul>
-                    </div>
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calculadora.html">Calculadora</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                    </ul>
                 </nav>
             </div>
-        </main>
-        <footer>
-            <div>
-                <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
-            </div>
-        </footer>
+        </div>
     </div>
     <script src="js/Dm.js"></script>
 </body>

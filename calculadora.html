@@ -14,10 +14,15 @@
         <h1>EcoCalc</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-                <li><a><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></a></li>
+                <div class="mobile">
+                    <li><button id="btnMudarTema" onclick="menu()">Menu</button></li>
+                </div>
+                <div class="pc">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -25,12 +30,90 @@
         <!--Banner da Página-->
         <section class="banner">
             <div>
-                <h1>Calculadora</h1>
+                <h1>Cálculo da Pegada de Carbono</h1>
             </div>
         </section>
         <section class="intro">
             <div>
-                <h1>(Calculadora)</h1>
+                <h1>Cálculo da Pegada de Carbono</h1>
+            </div>
+            <div>
+                <p>Quanto você gasta de energia elétrica por mês (em kWh)? </p>
+                <label for="a">kWh:</label>
+                <input type="number" id="a" value="0">
+            </div>
+            <div>
+                <p>Quanto tempo você costuma ficar no banho por dia? </p>
+                <label for="b">Minutos:</label>
+                <input type="number" id="b" value="0">
+            </div>
+            <div>
+                <p>Você utiliza veículo próprio para ir ao trabalho? </p>
+                <label for="c1">Gasolina/Litro:</label>
+                <input type="number" id="c1" value="0">
+            </div>
+            <div>
+                <label for="c2">Diesel/Litro:</label>
+                <input type="number" id="c2" value="0">
+            </div>
+            <div>
+                <label for="c3">Etanol/Litro:</label>
+                <input type="number" id="c3" value="0">
+            </div>
+            <div>
+                <p>Com que frequência você consome alimentos de origem animal (carne, ovos)? </p>
+                <label for="d1">Carne bovina/kg:</label>
+                <input type="number" id="d1" value="0">
+            </div>
+            <div>
+                <label for="d2">Carne de porco/kg:</label>
+                <input type="number" id="d2" value="0">
+            </div>
+            <div>
+                <label for="d3">Carne de frango/kg:</label>
+                <input type="number" id="d3" value="0">
+            </div>
+            <div>
+                <label for="d4">Ovos:</label>
+                <input type="number" id="d4" value="0">
+            </div>
+            <div>
+                <p>Com que frequência você faz compras internacionais por mês SHEIN, AliExpress, Shopee?</p>
+                <label for="e">Quantidade de compras:</label>
+                <input type="number" id="e" value="0">
+            </div>
+            <div>
+                <p>Quantas viagens você fez no ultimo ano (Contando ida de volta)? </p>
+                <label for="f1">Viagens nacionais:</label>
+                <input type="number" id="f1" value="0">
+            </div>
+            <div>
+                <label for="f2">Viagens internacionais:</label>
+                <input type="number" id="f2" value="0">
+            </div>
+            <button onclick="calcular()">Calcular</button>
+            <h2>Resultado: <span id="resultado">0</span></h2>
+        </section>
+        <section class="Parceiras">
+            <div>
+                <h1>Empresa Idealizadora</h1>
+                <nav>
+                    <ul>
+                        <li><img src="img/FIAP.png" alt="Logo da FIAP"></li>
+                    </ul>
+                </nav>
+                <h1>Empresas Parceiras</h1>
+                <nav>
+                    <ul>
+                        <li><img src="img/SAP.png" alt="Logo da SAP"></li>
+                        <li><img src="img/FIA.png" alt="Logo da FIA"></li>
+                        <li><img src="img/MAHINDRA.png" alt="Logo da Mahindra"></li>
+                    </ul>
+                    <ul class="img2">
+                        <li><img src="img/Ultragaz.png" alt="Logo da Ultragaz"></li>
+                        <li><img src="img/Ultracargo.png" alt="Logo da Ultracargo"></li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
@@ -40,6 +123,21 @@
             <p>Todos os direitos reservados &copy; - Global Solution - 2024</p>
         </div>
     </footer>
+    <div class="mobile">
+        <div id="contatomodal" class="modal">
+            <div class="modal-content">
+                <nav>
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calculadora.html">Calculadora</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
     <script src="js/Dm.js"></script>
     <script src="js/Cal.js"></script>
 </body>
