@@ -152,6 +152,9 @@ header button:hover {
     width: 70%;
     margin: 50px auto;
 }
+hr{
+    border: 2px solid white;
+}
 .intro h1{
     text-align: center;
     font-size: 36px;
