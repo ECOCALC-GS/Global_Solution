@@ -17,14 +17,14 @@
             <ul>
                 <!--Versão Mobile-->
                 <div class="mobile">
-                    <li><button id="btnMudarTema" onclick="menu()">Menu</button></li>
+                    <li><button id="btnMudarTema" class="btnm" onclick="menu()">Menu</button></li>
                 </div>
                 <!--Versão PC-->
                 <div class="pc">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="calculadora.html">Calculadora</a></li>
                     <li><a href="integrantes.html">Participantes</a></li>
-                    <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                    <li><button id="btnMudarTema" class="btnm" onclick="mudarTema()">Mudar Tema</button></li>
                 </div>
             </ul>
         </nav>
@@ -88,6 +88,9 @@
         </ul>
     </div>
     </nav>
+    <div class="btn-p">
+    <button id="btnMudarTema" class="btn" onclick="comentar()">Enviar Comentário</button>
+    </div>
         </section>
         <!--Empresas Parcerias e Idealizadora do Global Solution-->
         <section class="Parceiras">
@@ -129,10 +132,25 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="calculadora.html">Calculadora</a></li>
                         <li><a href="integrantes.html">Participantes</a></li>
-                        <li><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></li>
+                        <li><button id="btnMudarTema" class="btnm" onclick="mudarTema()">Mudar Tema</button></li>
                     </ul>
                 </nav>
             </div>
+        </div>
+    </div>
+    <!--Página de envio de comentários-->
+    <div id="coment" class="cm">
+        <div class="coment-content">
+            <h2>Comente aqui</h2>
+            <form id="comentForm">
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" name="name" required />
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required />
+                <label for="inputComent">Comentários:</label>
+                <textarea id="inputComent" name="coment" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
         </div>
     </div>
     <script src="js/Dm.js"></script>

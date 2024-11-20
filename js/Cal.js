@@ -45,6 +45,7 @@ function calcular() {
     let d2 = parseFloat(document.getElementById('d2').value);
     let d3 = parseFloat(document.getElementById('d3').value);
     let d4 = parseFloat(document.getElementById('d4').value);
+    let d5 = parseFloat(document.getElementById('d5').value);
     let e = parseFloat(document.getElementById('e').value);
     let f1 = parseFloat(document.getElementById('f1').value);
     let f2 = parseFloat(document.getElementById('f2').value);
@@ -53,7 +54,7 @@ function calcular() {
     b = b * 0.15 * 0.9;
 
     let c = (c1 * 2.31) + (c2 * 1.90) + (c3 * 2.68);
-    let d = (d1 * 27) + (d2 * 8) + (d3 * 6.9) + (d4 * 0.5);
+    let d = (d1 * 27) + (d2 * 8) + (d3 * 6.9) + (d4 * 0.5) + (d5 * 4);
     e = e * 20;
     let f = (f1 * 1300 * 0.3) + (f2 * 17000 * 0.15);
 
@@ -165,6 +166,6 @@ function calcular() {
     // Exibe a mensagem no elemento HTML
     document.getElementById('mensagem').innerHTML = mensagem;
 
-    // Navega para a próxima página, se necessário
+    // Navega para a página do resultado
     nextPage();
 }
