@@ -258,6 +258,9 @@ body.dark-theme .Parceiras{
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
+body.dark-theme .menu-content{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
 
 /*Menu da versão mobile*/
 .mn{

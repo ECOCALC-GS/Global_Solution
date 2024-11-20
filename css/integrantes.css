@@ -350,6 +350,32 @@ body.dark-theme .Parceiras{
 body.dark-theme .modal-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
+body.dark-theme .menu-content{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .coment-content{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .coment-content form .btn{
+    color: #221d49;
+    border: 4px solid #9afcff;
+    background-color: #9afcff;
+}
+body.dark-theme .coment-content form .btn:hover {
+    background-color: #00000000;
+    border: 4px solid #9afcff;
+    color: #9afcff;
+}
+body.dark-theme .coment-content input{
+    border: 1px solid #7864fd;
+    background-color: #292258;
+    color: white;
+}
+body.dark-theme .coment-content textarea{
+    border: 1px solid #7864fd;
+    background-color: #292258;
+    color: white;
+}
 
 /*Menu na versão mobile*/
 .mn{
@@ -398,6 +424,7 @@ body.dark-theme .modal-content{
 .menu-content button{
     font-size: 20px;
 }
+
 /*Menu de envio de comentários*/
 .cm{
     display: none;

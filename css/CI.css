@@ -5,11 +5,14 @@ body, html {
     flex-direction: column;
 }
 body{
+    background: linear-gradient(to bottom, #ffffff66, #000000), 
+    url(../img/Banner.jpg) no-repeat center center/cover;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    height: 100% auto;
+    width: 100% auto;
     margin: 0;
     padding: 0;
-    background-color: #98aca7;
+    background-attachment: fixed; 
 }
 /*Menu no topo da página*/
 header {
@@ -218,6 +221,9 @@ body.dark-theme .ci img{
     border: 5px solid #443e66;
 }
 body.dark-theme .modal-content{
+    background: linear-gradient(to bottom, #292258, #06050c);
+}
+body.dark-theme .menu-content{
     background: linear-gradient(to bottom, #292258, #06050c);
 }
 
