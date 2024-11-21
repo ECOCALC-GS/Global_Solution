@@ -12,7 +12,7 @@ header {
     z-index: 1;
     width: 100%;
     min-height: 100px;
-    background-color: #32997f;
+    background-color: #278069;
     color: #9afcff;
     margin: 0px auto;
     display: flex;
@@ -148,6 +148,7 @@ header button:hover {
 /*calculadora*/
 .intro{
     border: 10px solid white;
+    border-radius: 10px;
     background-color: #00000000;
     width: 70%;
     margin: 50px auto;
@@ -256,6 +257,7 @@ form div.active {
 /*Pagina das empresas Parceiras e da idealizadora*/
 .Parceiras{
     border: 10px solid white;
+    border-radius: 10px;
     background-color: #00000000;
     width: 70%;
     margin: 50px auto;

@@ -21,7 +21,7 @@ header {
     z-index: 1;
     width: 100%;
     min-height: 100px;
-    background-color: #32997f;
+    background-color: #278069;
     color: #9afcff;
     margin: 0px auto;
     display: flex;
@@ -163,6 +163,7 @@ main a:hover {
 }
 .ci{
     border: 5px solid white;
+    border-radius: 10px;
     background-color: #32997f;
 }
 .ci h1{
